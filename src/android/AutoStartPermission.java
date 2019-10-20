@@ -43,7 +43,7 @@ public class AutoStartPermission extends CordovaPlugin {
     private void openAutoStartPermissionDialog(CallbackContext callbackContext) {
             showDialogBox(callbackContext);
     }
-    private void showDialogBox(CallbackContext callbackContext){
+    private void showDialogBox(final CallbackContext callbackContext){
         try {
             AlertDialog.Builder builder1 = new AlertDialog.Builder(cordova.getActivity());
             builder1.setMessage(Html.fromHtml("<font color='#000000'>Turn on autostart permission</font>"));
